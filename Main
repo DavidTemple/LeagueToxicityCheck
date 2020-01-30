@@ -1,0 +1,109 @@
+#include <iostream>
+
+void PrintIntroduction(){
+    std::cout <<"Welcome to the League of Legends Toxicity Check!\n";
+    std::cout<< "Respond to the Questions truthfully, dishonesty is toxic..." <<std ::endl;
+    std::cout << std ::endl;
+    
+}
+
+void GetAge(){
+    int AgeOfPlayer;
+    int LevelOfToxicity=0;
+
+    std::cout<<"How old are you ? \n" ;
+    
+    std::cin >> AgeOfPlayer ;
+    std::cout<< "you entered \n "<< AgeOfPlayer;
+    std:: cout <<std:: endl;
+
+    if (AgeOfPlayer<=12)
+    {
+        LevelOfToxicity += 40;
+    }
+    if (AgeOfPlayer>12&&AgeOfPlayer<=18)
+    {
+        LevelOfToxicity += 30;
+    }
+    if (AgeOfPlayer>18&&AgeOfPlayer<=24)
+    {
+        LevelOfToxicity += 10;
+    }
+    
+}
+
+void GetRole(){
+     int RoleOfPlayer;
+     int LevelOfToxicity=0;
+
+    //Role Check
+    
+    std::cout<<"What is your main role ? \n";
+    
+  
+    std::cout<<"Top?-- Enter 1\n";
+   
+    std::cout<<"Mid?-- Enter 2 \n";
+    
+    std::cout<<"Jungle?-- Enter 3 \n";
+   
+    std::cout<<"Adc?-- Enter 4 \n";
+   
+    std::cout<<"Support?-- Enter 5 \n";
+ 
+    std:: cin >> RoleOfPlayer;
+    std:: cout <<std:: endl;
+    
+     if (RoleOfPlayer==1)
+    {
+        std::cout<<"You are a Top Main! Good for you! \n";
+        LevelOfToxicity += 25;
+    }
+     if (RoleOfPlayer==2)
+    {
+        std::cout<<"You are a Mid Main! Welcome! \n";
+        LevelOfToxicity += 15;
+    }
+     if (RoleOfPlayer==3)
+    {
+        std::cout<<"You are a Jungle Main! Ouch! \n";
+        LevelOfToxicity += 15;
+    }
+     if (RoleOfPlayer==4)
+    {
+        std::cout<<"You are an Adc Main! Good choice! \n";
+        LevelOfToxicity += 5;
+    }
+    if (RoleOfPlayer==5)
+    {
+        std::cout<<"You are a Support Main! Good choice! \n";
+        LevelOfToxicity += 0;
+    }
+    
+    std:: cout <<std:: endl;
+
+}
+
+void GetFavoriteChampion(){
+    int FavoriteChampion;
+     
+    std::cout<<"Who is youre favorite champion? \n";
+    
+    
+
+
+}
+
+void PlayGame(){
+    // Declarations 
+     int LevelOfToxicity=0;
+
+    std::cout<<"You're level of Toxicity "<< LevelOfToxicity;
+    
+}
+
+int main(){
+
+    
+    return 0;
+}
